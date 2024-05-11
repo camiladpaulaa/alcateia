@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcc132;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.scoreboard::before {
+    content: '';
+    width: 3px;
+    background-color: black;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#vander1 {
+    color: #000000;
+}
+
+#vander2 {
+    color: #000000;
+}
+
+.vander {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    margin: 0 50px;
+}
+
+.separador {
+    display: none;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    color: inherit;
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn2player1 {
+    margin-right: 70px;
+}
+
+#finish {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#finish:hover {
+    background-color: #45a049;
+}
